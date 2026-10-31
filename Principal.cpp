@@ -28,8 +28,17 @@ int main() {
     cout << "Mostramos el color c1: " << c1 << endl;
     cout << "Mostramos el color c2: " << c2 << endl;
 
-    cout << d1 << endl;
-    cout << d2 << endl;
+    cout << "Mostramos el día d1: " << d1 << endl;
+    cout << "Mostramos el día d2: " << d2 << endl;
+
+    // Y ahora comprobamos cómo funciona la función
+    // "toString" que hemos definido:
+
+    cout << "Mostramos el color c1: " << toString(c1) << endl;
+    cout << "Mostramos el color c2: " << toString (c2) << endl;
+
+    cout << "Mostramos el día d1: " << toString (d1) << endl;
+    cout << "Mostramos el día d2: " << toString (d2) << endl;
 
     return 0;
 }

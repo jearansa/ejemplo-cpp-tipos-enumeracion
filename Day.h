@@ -33,4 +33,18 @@ inline ostream & operator << (ostream &out, const Day &d)
     return out;
 }
 
+
+inline string toString (const Day &d) {
+    switch (d){
+        case Monday: return "Day::Monday";
+        case Tuesday: return "Day::Tuesday";
+        case Wednesday: return "Day::Wednesday";
+        case Thursday: return "Day::Thursday";
+        case Friday: return "Day::Friday";
+        case Saturday: return "Day::Saturday";
+        case Sunday: return "Day::Sunday";
+        default: return "";
+    }
+}
+
 #endif //UNTITLED_DAY_H

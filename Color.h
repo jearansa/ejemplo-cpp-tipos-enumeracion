@@ -31,4 +31,13 @@ inline ostream & operator << (ostream &out, const Color &d)
     return out;
 }
 
+inline string toString (const Color &d) {
+    switch (d){
+        case Color::Red: return "Color::Red";
+        case Color::Green: return "Color::Green";
+        case Color::Blue: return "Color::Blue";
+        default: return "";
+    }
+}
+
 #endif //UNTITLED_COLOR_H
