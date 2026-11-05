@@ -34,11 +34,18 @@ int main() {
     // Y ahora comprobamos cómo funciona la función
     // "toString" que hemos definido:
 
-    cout << "Mostramos el color c1: " << toString(c1) << endl;
-    cout << "Mostramos el color c2: " << toString (c2) << endl;
+    // Usamos el "espacio de nombres global", definido por "::";
+    // en este ejemplo no sería obligatorio, pero sí que lo sería
+    // si estamos, por ejemplo, en una clase quetenga definido
+    // su propio "toString()" (como "Calificacion" en la Práctica 04.02)
+    // Ver https://stackoverflow.com/questions/73590799/c-member-function-hides-global-function
+    // para más detalles-
 
-    cout << "Mostramos el día d1: " << toString (d1) << endl;
-    cout << "Mostramos el día d2: " << toString (d2) << endl;
+    cout << "Mostramos el color c1: " << ::toString(c1) << endl;
+    cout << "Mostramos el color c2: " << ::toString (c2) << endl;
+
+    cout << "Mostramos el día d1: " << ::toString (d1) << endl;
+    cout << "Mostramos el día d2: " << ::toString (d2) << endl;
 
     return 0;
 }
